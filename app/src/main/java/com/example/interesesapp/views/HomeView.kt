@@ -27,6 +27,7 @@ import com.example.interesesapp.components.SpaceH
 import java.math.BigDecimal
 import java.math.RoundingMode
 import androidx.compose.ui.graphics.Color
+import com.example.interesesapp.viewmodels.PrestamoViewModel
 
 @Composable
 fun ContentHomeView(paddingValues: PaddingValues){
@@ -88,7 +89,7 @@ fun ContentHomeView(paddingValues: PaddingValues){
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeView(){
+fun HomeView(viewModel: PrestamoViewModel) {
     Scaffold( topBar = {
         CenterAlignedTopAppBar(
             title = { Text(text = "Calculadora Prestamos", color = Color.White)},
